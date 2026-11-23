@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10120f">
+  <title>Nika — Creative Designer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow"></div>
+
+  <!-- ШАПКА -->
+  <header class="header">
+    <a class="logo" href="#home" aria-label="На главную">N<span>.</span></a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#home">Главная</a>
+      <a href="#achievements">Мой путь</a>
+      <a href="#technologies">Технологии</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+
+    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav" type="button">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section class="hero" id="home">
+      <div class="hero-orb hero-orb--one"></div>
+      <div class="hero-orb hero-orb--two"></div>
+
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          ОТКРЫТА К НОВЫМ ИДЕЯМ
+        </div>
+
+        <h1 class="hero-title">
+          Привет,<br>
+          я <span class="name-highlight">Ника<span class="title-star">✳</span></span>
+        </h1>
+
+        <p class="hero-description">
+          Начинающий дизайнер, который превращает идеи
+          в красивые и удобные цифровые пространства
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button--primary magnetic" href="#achievements">
+            Мой путь <span>↓</span>
+          </a>
+          <a class="button button--text" href="https://t.me/vvlsslv" target="_blank" rel="noopener noreferrer">
+            Написать мне <span>↗</span>
+          </a>
+        </div>
+
+        <div class="hero-bottom">
+          <span>DESIGN · CREATIVITY · IDEAS</span>
+          <span class="scroll-note">ЛИСТАЙ НИЖЕ ↓</span>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="photo-decoration"></div>
+        <img class="hero-photo" src="images/fotka1.png" alt="Фотография Ники">
+
+        <div class="photo-caption">
+          <span class="caption-line"></span>
+          <span>THAT'S ME!</span>
+        </div>
+
+        <div class="photo-sticker">creative<br>mind <span>✳</span></div>
+      </div>
+
+      <div class="hero-index">01 / 04</div>
+    </section>
+
+    <!-- БЕГУЩАЯ СТРОКА -->
+    <div class="marquee" aria-label="Creative mind, big ideas">
+      <div class="marquee-track">
+        <span>CREATIVE MIND</span><i>✳</i>
+        <span>BIG IDEAS</span><i>✳</i>
+        <span>GOOD DESIGN</span><i>✳</i>
+        <span>CREATIVE MIND</span><i>✳</i>
+        <span>BIG IDEAS</span><i>✳</i>
+        <span>GOOD DESIGN</span><i>✳</i>
+      </div>
+    </div>
+
+    <!-- МОЙ ПУТЬ / ДОСТИЖЕНИЯ -->
+    <section class="achievements section" id="achievements">
+      <div class="section-top reveal">
+        <span class="section-label">01 — MY JOURNEY</span>
+        <span class="section-note">Маленькие и большие победы</span>
+      </div>
+
+      <h2 class="section-title reveal">
+        Мой <span class="lime">путь</span>
+      </h2>
+
+      <div class="timeline">
+
+        <article class="timeline-item timeline-item--clickable reveal"
+          data-photo="images/piano.PNG"
+          tabindex="0"
+          role="button"
+          aria-label="Открыть фотографию музыкального образования">
+
+          <div class="timeline-marker">✳</div>
+
+          <div class="timeline-content">
+            <span class="timeline-category">CREATIVITY</span>
+            <h3>Музыкальное образование</h3>
+            <p>Окончила музыкальную школу по классу фортепиано
+                 Научилась терпению, дисциплине и чувствовать настроение</p>
+            <span class="timeline-hint">Нажми, чтобы посмотреть фото ↗</span>
+          </div>
+
+          <span class="timeline-side">01</span>
+        </article>
+
+        <article class="timeline-item timeline-item--clickable reveal"
+          data-photo="images/academy.JPG"
+          tabindex="0"
+          role="button"
+          aria-label="Открыть фотографию Академии">
+
+          <div class="timeline-marker">✳</div>
+
+          <div class="timeline-content">
+            <span class="timeline-category">EDUCATION</span>
+            <h3>Новый этап в Академии</h3>
+            <p>Поступила в Академию управления и открыла для себя новые направления, знания и возможности</p>
+            <span class="timeline-hint">Нажми, чтобы посмотреть фото ↗</span>
+          </div>
+
+          <span class="timeline-side">02</span>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-marker">✳</div>
+
+          <div class="timeline-content">
+            <span class="timeline-category">DIGITAL DESIGN</span>
+            <h3>Первые проекты в дизайне</h3>
+            <p>Осваиваю Figma, изучаю UI/UX и учусь создавать гармоничные цифровые интерфейсы</p>
+          </div>
+
+          <span class="timeline-side">03</span>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-marker">✳</div>
+
+          <div class="timeline-content">
+            <span class="timeline-category">WEB DEVELOPMENT</span>
+            <h3>Собственный сайт</h3>
+            <p>Создаю свой сайт-портфолио с нуля, экспериментирую с анимациями и интерактивными элементами</p>
+          </div>
+
+          <span class="timeline-side">04</span>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ТЕХНОЛОГИИ -->
+    <section class="technologies section" id="technologies">
+      <div class="section-top reveal">
+        <span class="section-label">02 — MY TECHNOLOGIES</span>
+        <span class="section-note">Инструменты и навыки</span>
+      </div>
+
+      <div class="technologies-heading reveal">
+        <h2 class="section-title">
+          Технологии,<br>
+          которыми <span class="lime">владею</span>
+        </h2>
+
+        <p>
+          Инструменты, которые помогают мне воплощать идеи,
+          создавать дизайн и разрабатывать современные сайты
+        </p>
+      </div>
+
+      <div class="technologies-grid">
+
+        <!-- HTML -->
+        <article class="technology-card reveal">
+          <div class="technology-card-top">
+            <span class="technology-number">01 / CODE</span>
+            <span class="technology-icon technology-icon--html">5</span>
+          </div>
+
+          <div class="technology-info">
+            <h3>HTML5</h3>
+            <p>Структура и содержание веб-страниц
+                 Создание основы сайта</p>
+          </div>
+
+          <span class="technology-tag">MARKUP</span>
+        </article>
+
+        <!-- CSS -->
+        <article class="technology-card reveal">
+          <div class="technology-card-top">
+            <span class="technology-number">02 / STYLE</span>
+            <span class="technology-icon technology-icon--css">3</span>
+          </div>
+
+          <div class="technology-info">
+            <h3>CSS3</h3>
+            <p>Стилизация страниц, адаптивная вёрстка, анимации и эффекты</p>
+          </div>
+
+          <span class="technology-tag">STYLING</span>
+        </article>
+
+        <!-- JAVASCRIPT -->
+        <article class="technology-card reveal">
+          <div class="technology-card-top">
+            <span class="technology-number">03 / INTERACTION</span>
+            <span class="technology-icon technology-icon--js">JS</span>
+          </div>
+
+          <div class="technology-info">
+            <h3>JavaScript</h3>
+            <p>Интерактивность, динамические элементы и оживление интерфейсов</p>
+          </div>
+
+          <span class="technology-tag">DEVELOPMENT</span>
+        </article>
+
+        <!-- FIGMA -->
+        <article class="technology-card reveal">
+          <div class="technology-card-top">
+            <span class="technology-number">04 / DESIGN</span>
+
+            <span class="technology-icon technology-icon--figma">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+
+          <div class="technology-info">
+            <h3>Figma</h3>
+            <p>Создание макетов, прототипов и продумывание дизайна интерфейсов</p>
+          </div>
+
+          <span class="technology-tag">UI / UX DESIGN</span>
+        </article>
+
+        <!-- GITHUB -->
+        <article class="technology-card reveal">
+          <div class="technology-card-top">
+            <span class="technology-number">05 / VERSION CONTROL</span>
+            <span class="technology-icon technology-icon--github">GH</span>
+          </div>
+
+          <div class="technology-info">
+            <h3>GitHub</h3>
+            <p>Хранение проектов, работа с кодом и публикация сайтов</p>
+          </div>
+
+          <span class="technology-tag">REPOSITORY</span>
+        </article>
+
+        <!-- VS CODE -->
+        <article class="technology-card reveal">
+          <div class="technology-card-top">
+            <span class="technology-number">06 / WORKSPACE</span>
+            <span class="technology-icon technology-icon--vscode">VS</span>
+          </div>
+
+          <div class="technology-info">
+            <h3>VS Code</h3>
+            <p>Среда разработки, в которой я пишу и редактирую код</p>
+          </div>
+
+          <span class="technology-tag">CODE EDITOR</span>
+        </article>
+
+      </div>
+
+      <div class="technologies-bottom reveal">
+        <span>ИЗУЧАЮ НОВОЕ И РАЗВИВАЮСЬ</span>
+        <span>✳</span>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="contact section" id="contact">
+      <div class="contact-glow"></div>
+
+      <div class="section-top reveal">
+        <span class="section-label">03 — LET'S CONNECT</span>
+        <span class="section-note">Буду рада знакомству</span>
+      </div>
+
+      <div class="contact-content reveal">
+        
+
+        <h2>Давай<br><span>общаться</span><b>!</b></h2>
+
+        <a class="contact-mail-btn magnetic" href="mailto:latoshnika1@gmail.com">
+          <span>Связаться</span>
+          <span class="mail-arrow">↗</span>
+        </a>
+      </div>
+
+      <div class="socials reveal">
+        <a href="https://www.instagram.com/latosh.d?mdxt=aDZqaTBxaDR2dGsw&utm_source=qr"
+          target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle class="icon-fill" cx="18" cy="6" r="1"></circle>
+          </svg>
+        </a>
+
+        <a href="https://youtube.com/channel/UCzPhBw-UntNb7VhjN_mLgDQ?si=M2nw-ze90qOB-OOs"
+          target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 12s0-3.5-.45-5.15a2.8 2.8 0 0 0-1.97-1.97C17.85 4.4 12 4.4 12 4.4s-5.85 0-7.58.48a2.8 2.8 0 0 0-1.97 1.97C2 8.5 2 12 2 12s0 3.5.45 5.15a2.8 2.8 0 0 0 1.97 1.97c1.73.48 7.58.48 7.58.48s5.85 0 7.58-.48a2.8 2.8 0 0 0 1.97-1.97C22 15.5 22 12 22 12Z"></path>
+            <path class="icon-fill" d="m10 15.5 5-3.5-5-3.5z"></path>
+          </svg>
+        </a>
+
+        <a href="https://t.me/vvlsslv" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m22 3-3.3 18-7-5.2-3.8 3.6.6-6.4L19 5.1 6.4 11.9 2 10.3 22 3Z"></path>
+          </svg>
+        </a>
+      </div>
+
+      <footer class="footer">
+        <span>© 2026 NIKA</span>
+        <span>MADE WITH CURIOSITY <i>✳</i></span>
+        <a href="#home">НАВЕРХ ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <!-- ИНТЕРАКТИВНАЯ ТАКСА -->
+  <div class="dog-widget" id="dogWidget">
+    <div class="dog-bubble" id="dogBubble" aria-live="polite">
+      Привет! Давай знакомиться!
+    </div>
+
+    <button class="dog-button" id="dogButton" aria-label="Погладить таксу" type="button">
+      <svg class="dachshund" viewBox="0 0 260 150" role="img" aria-label="Анимированная мультяшная такса">
+        <path class="dog-tail" d="M45 83 Q18 73 25 48 Q30 34 42 43" />
+
+        <path class="dog-leg dog-leg--back" d="M72 91 Q69 112 70 128 L84 128 Q91 112 91 99" />
+        <path class="dog-leg dog-leg--back" d="M116 94 Q116 112 120 128 L134 128 Q139 111 136 96" />
+
+        <path class="dog-body" d="M44 63 Q75 43 132 55 Q165 60 181 80 L166 105 Q112 112 64 98 Q43 91 44 63Z" />
+        <path class="dog-body" d="M155 63 Q174 48 190 48 L207 78 Q191 96 169 92Z" />
+
+        <path class="dog-leg dog-leg--front" d="M173 87 Q171 109 171 129 L185 129 Q191 108 190 89" />
+        <path class="dog-leg dog-leg--front" d="M198 83 Q201 108 202 129 L216 129 Q221 105 215 79" />
+
+        <g class="dog-head-group">
+          <path class="dog-head" d="M179 30 Q190 8 218 18 Q244 27 238 57 Q233 81 211 84 Q184 83 176 61Z" />
+
+          <path class="dog-ear dog-ear--left" d="M187 30 Q166 17 169 48 Q169 69 190 66 Q199 48 187 30Z" />
+          <path class="dog-ear dog-ear--right" d="M225 25 Q246 16 249 43 Q251 61 231 64 Q220 49 225 25Z" />
+
+          <path class="dog-muzzle" d="M214 54 Q239 48 250 61 Q253 75 233 79 L212 72Z" />
+          <ellipse class="dog-nose" cx="247" cy="62" rx="5" ry="4" />
+
+          <g class="dog-eyes">
+            <circle class="dog-eye" cx="211" cy="43" r="3.5" />
+            <circle class="dog-eye" cx="232" cy="42" r="3.5" />
+            <circle class="dog-eye-shine" cx="212" cy="42" r="1" />
+            <circle class="dog-eye-shine" cx="233" cy="41" r="1" />
+          </g>
+
+          <path class="dog-tongue" d="M226 76 Q229 87 236 81 Q239 76 235 73Z" />
+
+          <path class="dog-collar" d="M174 53 Q181 64 190 67" />
+          <circle class="dog-tag" cx="187" cy="70" r="5" />
+        </g>
+      </svg>
+
+      <span class="dog-hint">ПОГЛАДЬ МЕНЯ!</span>
+    </button>
+  </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Наверх" type="button">↑</button>
+
+  <!-- ОКНО ПРОСМОТРА ФОТОГРАФИЙ -->
+  <div class="photo-modal" id="photoModal" aria-hidden="true">
+    <div class="photo-modal__overlay"></div>
+
+    <div class="photo-modal__content" role="dialog" aria-modal="true" aria-label="Просмотр фотографии">
+      <button class="photo-modal__close" id="photoModalClose" aria-label="Закрыть фотографию" type="button">
+        &times;
+      </button>
+
+      <img src="" alt="Фотография достижения" id="modalImage">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- ЛОГИКА ОТКРЫТИЯ ФОТОГРАФИЙ -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const modal = document.getElementById("photoModal");
+      const modalImage = document.getElementById("modalImage");
+      const closeButton = document.getElementById("photoModalClose");
+      const overlay = modal.querySelector(".photo-modal__overlay");
+      const photoItems = document.querySelectorAll(".timeline-item[data-photo]");
+
+      let previousOverflow = "";
+
+      function openPhoto(path) {
+        modalImage.src = path;
+        modal.classList.add("active");
+        modal.setAttribute("aria-hidden", "false");
+
+        previousOverflow = document.body.style.overflow;
+        document.body.style.overflow = "hidden";
+
+        closeButton.focus();
+      }
+
+      function closePhoto() {
+        if (!modal.classList.contains("active")) return;
+
+        modal.classList.remove("active");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = previousOverflow;
+
+        setTimeout(() => {
+          if (!modal.classList.contains("active")) {
+            modalImage.src = "";
+          }
+        }, 350);
+      }
+
+      photoItems.forEach(item => {
+        item.addEventListener("click", () => {
+          openPhoto(item.dataset.photo);
+        });
+
+        item.addEventListener("keydown", event => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openPhoto(item.dataset.photo);
+          }
+        });
+      });
+
+      closeButton.addEventListener("click", closePhoto);
+      overlay.addEventListener("click", closePhoto);
+
+      document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+          closePhoto();
+        }
+      });
+
+      modalImage.addEventListener("error", () => {
+        modalImage.alt = "Не удалось загрузить фотографию. Проверь название и расположение файла.";
+      });
+    });
+  </script>
+</body>
+</html>
